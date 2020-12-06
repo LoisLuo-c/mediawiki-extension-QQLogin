@@ -1,0 +1,55 @@
+{
+	"name": "QQLogin",
+	"author": [
+		"donnaluo"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:QQLogin",
+	"descriptionmsg": "use qq to login wiki",
+	"license-name": "",
+	"type": "other",
+	"requires": {
+		"MediaWiki": ">= 1.32.0"
+	},
+	"ConfigRegistry": {
+		"qqlogin": "GlobalVarConfig::newInstance"
+	},
+	"config": {
+		
+	},
+	"MessagesDirs": {
+		"QQLogin": [
+			"i18n"
+		]
+	},
+	"AutoloadNamespaces": {
+		"QQLogin\\": "includes/"
+	},
+	"AuthManagerAutoConfig": {
+		"primaryauth": {
+			"QQLogin\\Auth\\QQPrimaryAuthenticationProvider": {
+				"class": "QQLogin\\Auth\\QQPrimaryAuthenticationProvider",
+				"sort": 0
+			}
+		}
+	},
+	"SpecialPages": {
+		"QQLoginReturn": "QQLogin\\Specials\\SpecialQQLoginReturn",
+		"ManageQQLogin": "QQLogin\\Specials\\SpecialManageQQLogin"
+	},
+	"DefaultUserOptions": {
+		"echo-subscriptions-web-change-qqlogin": true
+	},
+	"Hooks": {
+		"AuthChangeFormFields": "QQLogin\\QQLoginHooks::onAuthChangeFormFields",
+		"UserLogoutComplete": "QQLogin\\QQLoginHooks::onUserLogoutComplete"
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteExtPath": "QQLogin"
+	},
+	"ServiceWiringFiles": [
+		"includes/ServiceWiring.php"
+	],
+	"load_composer_autoloader": true,
+	"manifest_version": 2
+}

@@ -1,0 +1,18 @@
+{
+	"@metadata": {
+		"authors": ["donnaluo"]
+	},
+	"qqlogin": "使用QQ登录",
+	"qqlogin-manage":"关联用户名",
+	"manageqqlogin": "注册WIKI用户名",
+	"qqlogin-wikiusername":"请输入您的wiki用户名",
+	"qqlogin-generic-error": "出现意外错误。请返回重试。信息：$1",
+	"qqlogin-qquser": "QQ用户",
+	"qqlogin-error-no-authentication-workflow": "您请求了继续已经开始的QQ身份验证工作流，但这里没有已经开始的工作流。请通过尝试重新登录，开始新的身份验证工作流。",
+	"qqlogin-loginbutton-help": "通过您的QQ账户鉴别您。",
+	"qqlogin-param-error-label": "从QQ返回的错误代码",
+	"qqlogin-param-error-help": "在身份验证失败的情况下，从QQ返回的错误代码。",
+	"qqlogin-param-code-label": "来自QQ的访问令牌",
+	"qqlogin-param-code-help": "在成功身份验证的情况下，从QQ返回的访问令牌。",
+	"qqlogin-access-denied": "无法登录。您拒绝了对您QQ账户信息的访问。"
+}
